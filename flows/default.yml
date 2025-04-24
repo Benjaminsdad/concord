@@ -1,0 +1,10 @@
+configuration:
+  arguments:
+    target_host: "server2"  # Default value (can be overridden when run)
+
+steps:
+  - log: "Running Ansible playbook on ${target_host}..."
+
+  - exec:
+      cmd: >
+        ansible-playbook -i inventory.ini run_script.yml --limit ${target_host}
