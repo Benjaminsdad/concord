@@ -1,2 +1,3 @@
 flows:
-  default: flows/default.yml
+  default:
+    - log: "This is running directly from concord.yml"
