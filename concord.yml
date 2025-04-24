@@ -1,7 +1,2 @@
 flows:
   default: flows/default.yml
-
-configuration:
-  runtime:
-    type: docker
-    image: ansible/ansible:latest  # Or your custom image
