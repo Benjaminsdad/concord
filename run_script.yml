@@ -1,0 +1,8 @@
+# run_script.yml
+- name: Run PowerShell script
+  hosts: windows  # targets the full group, but see below for limiting
+  gather_facts: no
+  tasks:
+    - name: Run script
+      win_shell: |
+        powershell.exe -ExecutionPolicy Bypass -File C:\Temp\script.ps1
