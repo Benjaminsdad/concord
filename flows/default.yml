@@ -1,2 +1,3 @@
-steps:
-  - log: "Hello from Concord!"
+flows:
+  default:
+    - log: "Hello from Concord!"
